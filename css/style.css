@@ -1,22 +1,86 @@
-body {
-  background-color: red; 
+* {
+  box-sizing: border-box;
 }
 
-header {
-  background-color: yellow;
-  height: 80px;
+body { 
+  font-family: 'Open Sans', sans-serif; 
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding : 0;
+  position: relative;
 }
 
 nav {
-  background-color: blue;
-  height: 80px;
+  height: 115px;
+  width: 100vw;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #007196;
 }
 
-.logo img {
-  width: 100px;
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 8px;
+  margin-top: 3%;
+  margin-left: 50px;
+  font-size: 13px;
+}
+
+nav ul li:first-child {
+  font-size: 22px;
+  margin-right: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #55b0cb;
+  /* color: #afdae6; */
+}
+
+nav a:hover {
+  color: skyblue;
+}
+
+img {
+  width: 45vw;
+  height: 45vh;
   height: auto;
+  opacity: 0.6;
+  margin-top: 4%;
+  margin-left: 27%;
 }
 
 main {
- background-color:purple;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.banner-container {
+  display: block;
+  color: #269abc;
+  background-color: white;
+  opacity: 0.2;
+  padding: 0 5px 0 5px;
+  text-align: center;
+  font-size: large;
+  margin: 0;
+}
+
+.banner-container:hover {
+  visibility: visible;
+  transition: 3s;
+}
+
+.hidden {
+  visibility: hidden;
 }
