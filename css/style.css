@@ -1,7 +1,22 @@
 body {
+  background-color: red; 
+}
 
+header {
+  background-color: yellow;
+  height: 80px;
 }
 
 nav {
-    
+  background-color: blue;
+  height: 80px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+main {
+ background-color:purple;
 }
