@@ -14,73 +14,273 @@ body {
   position: relative;
 }
 
+/* Removes underline on hyperlink text */
+a {
+  text-decoration: none;
+}
+
+
+/* NAV AND BANNER STYLING ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Sets styling elements of header navbar */
 nav {
-  height: 115px;
-  width: 100vw;
+  display: flex;
+  height: auto;
+  width: 100%;
+  position: fixed; /* keeps nav bar fixed to top of page */
   background-color: white;
+  top: 0;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  z-index: 1000;
   border-bottom: 1px solid #007196;
 }
 
+/* Removes margin from navbar list */
 nav ul {
-  margin: 0;
+  margin: 0 auto;
+  margin-right: 150px;
 }
 
+/* Sets styling for list items in navbar list */
 nav ul li {
   display: inline-block;
   list-style-type: none;
-  margin: 8px;
   margin-top: 3%;
+  margin-bottom: 3%;
   margin-left: 50px;
   font-size: 13px;
 }
 
+/* Makes first child in navbar list larger font and spaced further left */
 nav ul li:first-child {
   font-size: 22px;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
+/* Colors hyperlinks in navbar */
 nav a {
-  text-decoration: none;
   color: #55b0cb;
   /* color: #afdae6; */
 }
 
+/* Switches hyperlink color on hover */
 nav a:hover {
   color: skyblue;
 }
 
-img {
+/* Styling for image in center of page */
+main > img {
   width: 45vw;
   height: 45vh;
   height: auto;
   opacity: 0.6;
-  margin-top: 4%;
+  margin: 1%;
   margin-left: 27%;
 }
 
-main {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
+/* Styling for banner below header */
 .banner-container {
   display: block;
+  width: 100%;
+  height: auto;
   color: #269abc;
-  background-color: white;
-  opacity: 0.2;
-  padding: 0 5px 0 5px;
+  background-color: rgba(255,255,255,0.2);
+  opacity: 0.5;
   text-align: center;
   font-size: large;
   margin: 0;
+  margin-top: 106px;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
 }
 
-.banner-container:hover {
-  visibility: visible;
-  transition: 3s;
+/* Animation of banner to make it fade in on page load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* FEATURES BOX STYLING /////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Styling for the features-container */
+.features-container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20%;
 }
 
-.hidden {
-  visibility: hidden;
+.feature-box {
+  display: inline-block;
+  background-color: #5ed1f9;
+  border-radius: 25px;
+  height: auto;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.feature-box p:first-child {
+  margin: 5px;
+  margin: 40px 20px 10px 20px;
+  font-size: 30px;
+}
+
+.feature-box p:nth-child(2) {
+  margin: 5px;
+  margin: 10px 20px 10px 20px;
+  font-size: 16px;
+}
+
+.learn-more-button {
+  display: inline-block;
+  background-color:#54bde0;
+  border-radius: 2%;
+  width: 60%;
+  height: 60px;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Styling for first image of feature buttons */
+.learn-more-button img:first-of-type {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  margin: 0;
+}
+
+/* Styling for text inside of learn more button */
+.learn-more-button a {
+  display: inline-block;
+  color: #ceebf7;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Styling for up arrow image in feature buttons */
+.learn-more-button img:nth-of-type(2) {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  opacity: 1;
+  margin: 0;
+}
+
+/* Makes learn more button text black on hover */
+.learn-more-button:hover a {
+  color:#303439;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* FOOTER STYLING ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Styling of footer */
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color:#303439;
+}
+
+
+/* Styling for ul holding the lists inside footer */
+.footer-nav-container {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* makes lists in footer in line */
+.footer-nav-container li {
+  display: inline-block;
+  margin: 8px;
+}
+
+/* removes bullets from footer lists */
+.footer-nav-container li ul li {
+  list-style-type: none;
+}
+
+/* makes lists underneath blue divs in footer, in a block style list  */
+.footer-nav-container li > ul > li {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Changes font size and color of hyperlinks in footer list */
+.footer-nav-container li a {
+  font-size: x-small;
+  font-weight: bold;
+  color: #7a838e;
+}
+
+/* Makes color of footer list hyperlinks white on hover */
+.footer-nav-container li a:hover {
+  color: #cacaca;
+}
+
+/* makes div in footer list white text with blue background, border radius of 3 pixels */
+.footer-nav-container li div {
+  color: #fff;
+  background-color: #5bc0de;
+  border-radius: 2px;
+  width: 200px;
+  height: 35px;
+}
+
+/* Styling for first list item hyperlink in footer list */
+.footer-nav-container li > div > a{
+  color: #fff;
+  font-size: small;
+}
+
+/* Makes color for first list item on hover black */
+.footer-nav-container li > div:hover a{
+  color: #303439;
+}
+
+/* Make images in footer all same size in opacity */
+.footer-nav-container li > div > img{
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+
+/* Makes footer list children below the first one in each list uppercase */
+.footer-nav-container > li > ul > li:nth-child(1), .footer-nav-container > li > ul > li:nth-child(2), .footer-nav-container > li > ul > li:nth-child(3) {
+  text-transform: uppercase;
+}
+
+/* Styling for items in footer marked as "notlink"(Phone and Share) */
+.footer-notlink {
+  color: #cacaca;
+  text-transform: uppercase;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.footer-notlink img {
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  margin: 0;
+  padding: 0; 
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
