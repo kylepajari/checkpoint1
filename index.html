@@ -7,7 +7,7 @@
     <title>Checkpoint One</title>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Link to Font used on Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -17,76 +17,84 @@
   </head>
   <body>
     <!-- Navigation Bar at top of page -->
-    <nav>
+    <nav>    
         <ul>
             <li><a href="">N E X U S Insurance Solutions</a></li>
             <li><a href="">Home</a></li>
             <li><a href="">Software as a Service</a></li>
             <li><a href="">Professional Hosting</a></li>
-            <li><a href="">Saas Model Prcing</a></li>
+            <li><a href="">Saas Model Pricing</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact Us</a></li>
         </ul>
     </nav>         
     <main>
         <!-- Banner underneath header -->
-        <div class="banner-container hidden">
-            <p>Connecting Carrier Premium Audit and Loss Control Departments to thier Policyholders, Field Staff and Vendor Partners like never before...</p>
+        <div class="banner-container hidden" id="banner">
+            <p>Connecting Carrier Premium Audit and Loss Control Departments to their Policyholders, Field Staff and Vendor Partners like never before...</p>
         </div>
 
         <!-- Logo in background of body -->
-        <img src="./img/logo.png">
+        <img src="./img/logo.png" id="logo" />
 
         <!-- Main features section -->
-        <div class="features-container">
+        <div class="features-container" id="features">
 
             <!-- Feature boxes contain text along with images that darken on hover over -->
 
             <div class="feature-box">
-                <p>Premium Audit Solutions</p>
+                <p class="feature-header">Premium Audit Solutions</p>
                 <p>The Nexus Management System™ is a web based solution offered on a SaaS basis as a fully hosted & managed solution</p>
-                <div class="learn-more-button" 
+                <div class="learn-more-button" id="button1"
                 onmouseover="book1.src='./img/book-icon-dark.PNG', arrow1.src='./img/up-arrow-dark.PNG'"
                 onmouseout="book1.src='./img/book-icon.PNG', arrow1.src='./img/up-arrow.PNG'">
-                    <img src="./img/book-icon.PNG" id="book1">
-                    <a href="">Learn More</a>
-                    <img src="./img/up-arrow.PNG" id="arrow1">              
+                <ul>
+                    <li><img src="./img/book-icon.PNG" id="book1"></li>
+                    <li><a href="">Learn More</a></li>
+                    <li><img src="./img/up-arrow.PNG" id="arrow1"></li>
+                </ul>                                
                 </div>
             </div>
 
             <div class="feature-box">
-                <p>Loss Control Solutions</p>
+                <p class="feature-header">Loss Control Solutions</p>
                 <p>The Nexus Loss Control™ is a web based solution offered on a SaaS basis as a fully hosted & managed solution</p>
-                <div class="learn-more-button" 
+                <div class="learn-more-button" id="button2" 
                 onmouseover="check2.src='./img/check-icon-dark.PNG', arrow2.src='./img/up-arrow-dark.PNG'"
                 onmouseout="check2.src='./img/check-icon.PNG', arrow2.src='./img/up-arrow.PNG'">
-                    <img src="./img/check-icon.PNG" id="check2">
-                    <a href="">Learn More</a>
-                    <img src="./img/up-arrow.PNG" id="arrow2">              
+                <ul>
+                    <li><img src="./img/check-icon.PNG" id="check2"></li>
+                    <li><a href="">Learn More</a></li>
+                    <li><img src="./img/up-arrow.PNG" id="arrow2"></li>
+                </ul>                                
                 </div>
             </div>
 
             <div class="feature-box">
-                <p>Pay as You Go</p>
+                <p class="feature-header">Pay as You Go</p>
                 <p>The Nexus Pay as You Go Reporting System™ allows policyholders to report their actual exposures online, monthly or quarterly</p>
-                <div class="learn-more-button" 
-                onmouseover="list3.src='./img/list-icon-dark.PNG', arrow3.src='./img/up-arrow-dark.PNG'"
-                onmouseout="list3.src='./img/list-icon.PNG', arrow3.src='./img/up-arrow.PNG'">
-                    <img src="./img/list-icon.PNG" id="list3">
-                    <a href="">Learn More</a>
-                    <img src="./img/up-arrow.PNG" id="arrow3">               
+                <div class="learn-more-button" id="button3"
+                onmouseover="list3.src='./img/list-icon-dark.PNG', arrow3.src='./img/doublearrow-icon-dark.PNG'"
+                onmouseout="list3.src='./img/list-icon.PNG', arrow3.src='./img/doublearrow-icon.PNG'">
+                <ul>
+                    <li><img src="./img/list-icon.PNG" id="list3"></li>
+                    <li><a href="">Learn More</a></li>
+                    <li><img src="./img/doublearrow-icon.PNG" id="arrow3"></li>
+                </ul>                  
                 </div>
             </div>
 
             <div class="feature-box">
-                <p>BPO Services</p>
+                <p class="feature-header">BPO Services</p>
                 <p>Nexus offers services for lower level tasks so your staff can focus on the knowledge based work</p>
-                <div class="learn-more-button" 
-                onmouseover="gear4.src='./img/gear-icon-dark.PNG', arrow4.src='./img/up-arrow-dark.PNG'"
-                onmouseout="gear4.src='./img/gear-icon.PNG', arrow4.src='./img/up-arrow.PNG'">
-                    <img src="./img/gear-icon.PNG" id="gear4">
-                    <a href="">Learn More</a>
-                    <img src="./img/up-arrow.PNG" id="arrow4">                
+                <div class="learn-more-button" id="button4"
+                onmouseover="gear4.src='./img/gear-icon-dark.PNG', arrow4.src='./img/doublearrow-icon-dark.PNG'"
+                onmouseout="gear4.src='./img/gear-icon.PNG', arrow4.src='./img/doublearrow-icon.PNG'">
+                <ul>
+                    <li><img src="./img/gear-icon.PNG" id="gear4"></li>
+                    <li><a href="">Learn More</a></li>
+                    <li><img src="./img/doublearrow-icon.PNG" id="arrow4"></li>
+                </ul>                  
                 </div>
             </div>
         </div>
@@ -94,60 +102,60 @@
 
     <!-- Footer at bottom of page -->
     <footer>
-        <ul class="footer-nav-container" >
-            <li>
-                <div onmouseover="book5.src='./img/book-icon-dark.PNG'"
+        <div class="footer-nav-container">
+            <ul>
+                <li><div onmouseover="book5.src='./img/book-icon-dark.PNG'"
                 onmouseout="book5.src='./img/book-icon.PNG'">
-                    <img src="./img/book-icon.PNG" id="book5"><a href="" >Premium Audit</a>
-                </div>
-                <ul>
+                    <img src="./img/book-icon.PNG" id="book5"><a href="">Premium Audit</a>
+                </div></li>
+                <li><ul>
                     <li><a href="" >premium audit for carriers</a></li>
                     <li><a href="" >premium audit for vendors</a></li>
                     <li><a href="" >nexusuaudit™</a></li>
-                </ul>                                
-            </li>
-            <li>
-                <div onmouseover="check6.src='./img/check-icon-dark.PNG'"
+                </ul></li>                                
+            </ul>
+            <ul>
+                <li><div onmouseover="check6.src='./img/check-icon-dark.PNG'"
                 onmouseout="check6.src='./img/check-icon.PNG'">
-                    <img src="./img/check-icon.PNG" id="check6"><a href="" >Loss Control</a>
-                </div> 
-                <ul>
+                    <img src="./img/check-icon.PNG" id="check6"><a href="">Loss Control</a>
+                </div></li> 
+                <li><ul>
                     <li><a href="" >loss control for carriers</a></li>
                     <li><a href="" >loss control for vendors</a></li>
                     <li><a href="" >field survey options</a></li>
-                </ul>
-            </li>
-            <li>
-                <div onmouseover="list7.src='./img/list-icon-dark.PNG'"
+                </ul></li>
+            </ul>
+            <ul>
+                <li><div onmouseover="list7.src='./img/list-icon-dark.PNG'"
                 onmouseout="list7.src='./img/list-icon.PNG'">
-                    <img src="./img/list-icon.PNG" id="list7"><a href="" >Pay as You Go</a>
-                </div>
-                <ul>
+                    <img src="./img/list-icon.PNG" id="list7"><a href="">Pay as You Go</a>
+                </div></li>
+                <li><ul>
                     <li><a href="" >pay as you go for carriers</a></li>
-                </ul>               
-            </li>
-            <li>
-                <div onmouseover="gear8.src='./img/gear-icon-dark.PNG'"
+                </ul></li>               
+            </ul>
+            <ul>
+                <li><div onmouseover="gear8.src='./img/gear-icon-dark.PNG'"
                 onmouseout="gear8.src='./img/gear-icon.PNG'">
-                    <img src="./img/gear-icon.PNG" id="gear8"><a href="" >BPO Services</a>
-                </div>
-                <ul>
+                    <img src="./img/gear-icon.PNG" id="gear8"><a href="">BPO Services</a>
+                </div></li>
+                <li><ul>
                     <li><a href="" >business process outsourcing</a></li>
-                </ul>                
-            </li>
-            <li>
-                <div onmouseover="contact9.src='./img/contact-icon-dark.PNG'"
+                </ul></li>                
+            </ul>
+            <ul>
+                <li><div onmouseover="contact9.src='./img/contact-icon-dark.PNG'"
                 onmouseout="contact9.src='./img/contact-icon.PNG'">
-                    <img src="./img/contact-icon.PNG" id="contact9"><a href="" >Contact Us</a>
-                </div>
-                <ul>
-                    <li><a href="" >nexus insurance solutions ©2018</a></li>
-                    <li><a href="" >@email</a></li>
+                    <img src="./img/contact-icon.PNG" id="contact9"><a href="">Contact Us</a>
+                </div></li>
+                <li><ul>
+                    <li><a href="">nexus insurance solutions ©2018</a></li>
+                    <li><a href="">@email</a></li>
                     <li class="footer-notlink">952.697.4403</li>
                     <li class="footer-notlink">share<img src="./img/share-arrow.PNG"></li>
-                </ul>
-            </li>
-        </ul>
+                </ul></li>
+            </ul>
+        </div>
     </footer>
   </body>
 </html>
